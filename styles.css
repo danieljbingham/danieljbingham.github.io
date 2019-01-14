@@ -18,11 +18,19 @@ a {
     margin: auto;
     background: linear-gradient(45deg, #fd5132, #f5253d);
 	color: #f9c749;
-	/*height: 50%;*/
+	height: 100%;
+	width: 100%;
+	position: absolute;
     margin: 0;
     padding: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+#mail-icon {
+	padding-right: 16px;
+	position: relative;
+  	top: 1px;
 }
 
 #skills {
@@ -38,12 +46,6 @@ a {
 	list-style-type: none;
 	padding-left: 20px;
 	padding-right: 20px;
-}
-
-#mail-icon {
-	padding-right: 16px;
-	position: relative;
-  	top: 1px;
 }
 
 .about {
