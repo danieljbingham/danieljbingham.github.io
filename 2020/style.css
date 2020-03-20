@@ -1,0 +1,29 @@
+body {
+    background-color: #000;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+#logo img {
+    position: fixed;
+    top: 25px;
+    left: 80px;
+    width: 90px;
+}
+
+#nav {
+    position: fixed;
+    top: 45px;
+    right: 80px;
+}
+
+#nav ul {
+    list-style-type: none;
+}
+
+#nav li {
+    font-weight: bold;
+    text-transform: uppercase;
+    float: left;
+    margin: 0 10px 0 40px;
+}
