@@ -16,7 +16,6 @@ html {
 
 body {
     width: 100vw;
-    height: -webkit-fill-available;
     height: 100vh;
     margin: 0;
     background-color: rgb(28, 28, 28);
@@ -34,9 +33,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* mobile viewport bug fix */
-    min-height: -webkit-fill-available;
-    min-height: 100vh;
+    height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);  
     scroll-snap-align: center;
     align-content: center;
     flex-wrap: wrap;
