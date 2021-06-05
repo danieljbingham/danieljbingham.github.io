@@ -1,41 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Daniel Bingham | Developer</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>// daniel bingham</title>
 </head>
 <body>
-	<div id="info" height=500px>
-		<br><br><br><br><br><br><br><br>
-		<img src="logo.png" width=56px>
-		<h1>Daniel Bingham</h1>
-		<p>Computer Science (BSc) Student at the University of St Andrews</p>
-		<br>
-		<p><span><img id="mail-icon" src="mail.png" width=18px></span><a href="mailto:hello@danielbingham.co.uk">hello@danielbingham.co.uk</a></p>
-	</div>
-		<!--<br><br><br><br><br><br><br><br>
-		<div id="skills">
-			<ul>
-				<li>Java</li>
-				<li>C#</li>
-				<li>Web Development</li>
-				<li>Graphic Design</li>
-			</ul>
-		</div>
-		<br><br><br>
-	</div>
-	<div id="portfolio">
-		<br>
-		<div class="about">
-			<h3>GRAPHIC DESIGN</h3>
-			<p>Most of my design work has been centred on social media design, and designing for popular influencers.</p>
-			<p>My clients include Spencer FC (YouTube creator with 2,000,000 subscribers), Hashtag United (football team with over 25 million video views) and Stalybridge Celtic (professional football club playing in the Evo-Stik Northern Premier League).</p>
-		</div>
-		<div class="about">
-			<h3>PROGRAMMING</h3>
-			<p>I currently study Computer Science at the University of St. Andrews, and have completed my first year of study. In first year, I was introduced to the Java programming language. My skills with Java include Object Oriented Programming and Programming with Data.</p>
-		</div>
-	</div>
-	<br>-->
+
+    <div class="container">
+
+        <section id="p1">
+            <div class="content">
+                <h1>//&thinsp;daniel bingham</h1> 
+                <p id="tw" class="cursor"></p>
+
+                <div class="buttons">
+                    <a href="#p2">// about me</a>
+                    <a href="#p2">// my projects</a>
+                    <a href="#p3">// contact me</a>
+                    <a href="#p3">// my resume</a>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="p2">
+            <h1>// my projects</h1> 
+         </section>
+
+         <section id="p3">
+            <h1>// contact me</h1> 
+         </section>
+    </div>
+
+    <script>
+        var i = 0;
+        var txt = '/* University of St Andrews graduate in Computer Science and freelance graphic designer */';
+        var speed = 45;
+        
+        typeWriter = () => {
+          if (i < txt.length) {
+            document.getElementById("tw").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+          }
+        }
+
+        window.onload = setTimeout(typeWriter, 800);
+    </script>
+    
 </body>
 </html>

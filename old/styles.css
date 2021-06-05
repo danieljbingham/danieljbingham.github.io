@@ -1,0 +1,79 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	text-align: center;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	margin: 0;
+	background-color: #eeeeee;
+}
+
+a {
+	text-decoration: none;
+	color: #f9c749;
+}
+
+#info {
+    margin: auto;
+    background: linear-gradient(45deg, #fd5132, #f5253d);
+	color: #f9c749;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#mail-icon {
+	padding-right: 16px;
+	position: relative;
+  	top: 1px;
+}
+
+#skills {
+	display: inline-block;
+}
+
+#skills ul {
+	padding: 0;
+}
+
+#skills ul li {
+	display: inline;
+	list-style-type: none;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.about {
+	width: 50%;
+	margin: auto;
+}
+
+hr {
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+h3:before, h3:after {
+ background-color: #333;
+ content: "";
+ display: inline-block;
+ height: 1px;
+ position: relative;
+ vertical-align: middle;
+ width: 20%;
+}
+
+h3:before {
+ right: 0.5em;
+ margin-left: -50%;
+}
+
+h3:after {
+ left: 0.5em;
+ margin-right: -50%;
+}
