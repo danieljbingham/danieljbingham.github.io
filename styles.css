@@ -68,7 +68,7 @@ h1 {
     width: fit-content;
 
     margin: 0 0 20px 0;
-    font-size: 6vw;
+    font-size: clamp(2rem, -0.75rem + 8.333vw, 6rem);
     color: rgb(235, 56, 140); 
 
     /*transition: color .8s,-webkit-text-stroke-color .8s,-webkit-text-stroke-width .8s;
@@ -102,11 +102,12 @@ h1:hover {
 p {
     transition: margin-left .2s;
     color: #ffffff;
-    max-width: 380px;
+    max-width: 400px;
     font-family: 'Courier New', Courier, monospace;
     line-height: 1.4em;
     margin-top: 30px;
-
+    font-size: clamp(0.9rem, calc(0.9rem + ((1vw - 0.228rem) * 5.7692)), 1.2rem);
+        
     animation: fadein 3s;
     -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 3s; /* Firefox < 16 */
@@ -128,7 +129,7 @@ a {
     padding: 12px 18px;
     margin-right: 18px;
     white-space: nowrap;
-
+    font-size: clamp(0.8rem, -0.3rem + 0.67vw, 1rem);
 
 
 }
