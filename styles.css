@@ -44,18 +44,11 @@ section {
     flex-direction: column;
 }
 
-#p1 {
-    background-color: rgb(28, 28, 28);
-}
-
-#p2 {
+section:nth-child(odd) {
+    background-color: rgb(28, 28, 28);}
+  
+section:nth-child(even) {
     background-color: rgb(38, 38, 38);
-    color: blue;
-}
-
-#p3 {
-    background-color: rgb(48, 48, 48);
-    color: yellow;
 }
 
 h1 {
