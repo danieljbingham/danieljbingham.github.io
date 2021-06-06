@@ -1,5 +1,5 @@
 var i = 0;
-var txt = '/* University of St Andrews graduate in Computer Science and freelance graphic designer */';
+var txt = '/* University of St Andrews graduate in Computer Science from Northern Ireland */';
 var speed = 45;
 
 typeWriter = () => {

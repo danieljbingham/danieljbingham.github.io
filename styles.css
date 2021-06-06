@@ -142,6 +142,16 @@ p:hover {
     margin-right: 18px;
 }
 
+.buttons a:active {
+    background-color: transparent;
+    border: 2px solid rgb(255, 114, 180);
+    color: white;
+    padding: 12px 18px;
+    margin-right: 16px;
+    border-radius: 5px;
+    margin-right: 18px;
+}
+
 .buttons {
     margin-top: 40px;
 
