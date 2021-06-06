@@ -5,7 +5,6 @@
   
 * {
     scroll-behavior: smooth;
-
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
@@ -16,8 +15,8 @@ html {
 
 body {
     width: 100vw;
-    height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
-    height: calc(var(--vh, 1vh) * 100);  
+    min-height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+    min-height: calc(var(--vh, 1vh) * 100);  
     margin: 0;
     background-color: rgb(28, 28, 28);
     font-family: Arial, Helvetica, sans-serif;
@@ -119,7 +118,7 @@ p:hover {
     background-color: rgb(235, 56, 140);
 }
 
-a {
+.buttons a {
     transition: color .2s, background-color .2s, border-radius .4s;
     text-decoration: none;
     background-color: rgb(235, 56, 140);
@@ -133,7 +132,7 @@ a {
 
 }
 
-a:hover {
+.buttons a:hover {
     background-color: transparent;
     border: 2px solid rgb(235, 56, 140);
     color: white;
@@ -166,6 +165,67 @@ a:hover {
 
 .content {
     max-width: 90%;
+}
+
+#logo {
+    position: fixed;
+    top: 20px;
+    left: 22px;
+    z-index: 100;
+    text-decoration: none;
+
+    transition: all .5s ease
+}
+
+#logo h1 {
+    font-size: 38px;
+}
+
+.hideLogo {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.showLogo {
+    opacity: 1;
+    transform: translateY(0) ;
+}
+
+#scroll {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: rgb(235, 56, 140);
+    color: #ffffff;
+    z-index: 100;
+
+    transition: all .5s ease
+}
+
+.hideScroll {
+    opacity: 0;
+    transform: translateY(20px) rotate(2deg);
+    width: 1px;
+    height: 1px;
+}
+
+.showScroll {
+    opacity: 1;
+    transform: translateY(0) rotate(0);
+    width: 50px;
+    height: 50px;
+}
+
+#scroll:hover {
+    background: rgb(218, 45, 126);
+}
+
+#scroll:active {
+    background: rgb(206, 30, 112);
 }
 
 @media only screen and (max-width: 768px) {
