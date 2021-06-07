@@ -29,6 +29,7 @@ btnScroll.addEventListener("click", function () {
   document.getElementById('home').scrollIntoView();
 })
 
+/*
 const logo = document.getElementById("logo");
 const scrollContainer = document.getElementById("scroll-container");
 scrollContainer.addEventListener("scroll", function() {
@@ -40,4 +41,12 @@ scrollContainer.addEventListener("scroll", function() {
     btnScroll.className = "hideScroll"
     logo.className = "hideLogo"
   }
+});
+*/
+
+
+ScrollOut({
+  scrollingElement: document.getElementById("scroll-container"),
+  threshold: 0.9,
+  once: true
 });

@@ -72,16 +72,6 @@ h1 {
     -webkit-text-stroke-color: transparent;    
     -webkit-text-stroke: 1.6px rgb(235, 56, 140);*/
 
-    transform: translateY(1rem);
-    opacity: 0;
-
-    animation: fadeinUp 0.8s forwards 0.2s; 
-    -webkit-animation: fadeinUp 0.8s forwards 0.2s; 
-    -moz-animation: fadeinUp 0.8s forwards 0.2s;
-     -ms-animation: fadeinUp 0.8s forwards 0.2s;
-      -o-animation: fadeinUp 0.8s forwards 0.2s;
-
-
 }
 
 h1:hover {
@@ -93,6 +83,18 @@ h1:hover {
     -webkit-text-stroke-width: 0.8px;
     -webkit-text-stroke: 1.6px rgb(235, 56, 140);
     cursor: default;*/
+}
+
+#main-h1 {
+    transform: translateY(1rem);
+    opacity: 0;
+
+    animation: fadeinUp 0.8s forwards 0.2s; 
+    -webkit-animation: fadeinUp 0.8s forwards 0.2s; 
+    -moz-animation: fadeinUp 0.8s forwards 0.2s;
+     -ms-animation: fadeinUp 0.8s forwards 0.2s;
+      -o-animation: fadeinUp 0.8s forwards 0.2s;
+
 }
 
 p {
@@ -236,6 +238,20 @@ p:hover {
 
 #scroll:active {
     background: rgb(206, 30, 112);
+}
+
+[data-scroll] {
+    transition: opacity 1.5s, transform 1.5s;
+}
+
+[data-scroll="in"] {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+[data-scroll="out"] {
+    opacity: 0;
+    transform: translateY(80px);
 }
 
 @media only screen and (max-width: 768px) {
