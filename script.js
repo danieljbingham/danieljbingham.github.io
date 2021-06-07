@@ -29,20 +29,19 @@ btnScroll.addEventListener("click", function () {
   document.getElementById('home').scrollIntoView();
 })
 
-/*
-const logo = document.getElementById("logo");
+
+//const logo = document.getElementById("logo");
 const scrollContainer = document.getElementById("scroll-container");
 scrollContainer.addEventListener("scroll", function() {
 
   if (scrollContainer.scrollTop >= window.innerHeight/2) {
     btnScroll.className = "showScroll"
-    logo.className = "showLogo"
+    //logo.className = "showLogo"
   } else {
     btnScroll.className = "hideScroll"
-    logo.className = "hideLogo"
+    //logo.className = "hideLogo"
   }
-});
-*/
+});//
 
 
 ScrollOut({
