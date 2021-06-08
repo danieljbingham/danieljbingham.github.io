@@ -97,10 +97,35 @@ h1:hover {
 
 }
 
+h2 {
+    background:
+     linear-gradient(
+       to bottom, rgb(235, 56, 140) 0%,
+       rgb(235, 56, 140) 100%
+     );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 7px;
+    padding-bottom: 4px;
+    transition: background-size .2s;
+    width: fit-content;
+
+    margin: 25px 0 0 0;
+    font-size: clamp(1.1rem, calc(1.1rem + ((1vw - 0.33rem) * 1.4583)), 1.8rem);
+    color: white; 
+
+}
+
+h2:hover {
+    transition: background-size .2s;
+    background-size: 4px 7.2vw;
+
+}
+
 p {
     transition: margin-left .2s, background-color .2s;
     color: #ffffff;
-    max-width: 400px;
+    max-width: 500px;
     font-family: 'Courier New', Courier, monospace;
     line-height: 1.4em;
     margin-top: 30px;
@@ -113,6 +138,11 @@ p {
      -ms-animation: fadein 3s; /* Internet Explorer */
       -o-animation: fadein 3s; /* Opera < 12.1 */
 
+}
+
+#projects p {
+    max-width: 700px;
+    margin-top: 15px;
 }
 
 p:hover {
@@ -173,6 +203,10 @@ p:hover {
     opacity: 0;
     animation: fadeinUp 0.2s ease 1s forwards;*/
 
+}
+
+#projects .buttons {
+    margin: 5px 0 25px 0;
 }
 
 .content {
@@ -267,6 +301,9 @@ p:hover {
     }
     h1 {
         margin: 0 auto 30px auto;
+    }    
+    h2 {
+        margin: 0 auto 20px auto;
     }
     p {
         text-align: center;
