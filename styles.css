@@ -304,9 +304,6 @@ p:hover {
 .swiper-container {
   overflow: hidden;
 }
-.swiper-slide {
-    padding: 0 2px;
-}
 .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
   right: 0px !important;
   left: auto !important;
