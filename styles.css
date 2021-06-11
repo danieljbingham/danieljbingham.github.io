@@ -190,11 +190,11 @@ p:hover {
     transform: translateY(1rem);
     opacity: 0;
 
-    animation: fadeinUp 0.8s forwards 4.2s; 
-    -webkit-animation: fadeinUp 0.8s forwards 4.2s; 
-    -moz-animation: fadeinUp 0.8s forwards 4.2s;
-     -ms-animation: fadeinUp 0.8s forwards 4.2s;
-      -o-animation: fadeinUp 0.8s forwards 4.2s;
+    animation: fadeinUp 0.8s forwards 5; 
+    -webkit-animation: fadeinUp 0.8s forwards 5s; 
+    -moz-animation: fadeinUp 0.8s forwards 5s;
+     -ms-animation: fadeinUp 0.8s forwards 5s;
+      -o-animation: fadeinUp 0.8s forwards 5s;
 
     display: flex;
     flex-direction: row;
