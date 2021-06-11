@@ -9,6 +9,8 @@
     <title>// daniel bingham</title>
     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-WWCCCV48ZR"></script>
     <script>
@@ -61,6 +63,7 @@
 
          <section id="projects">
             <div class="content" data-scroll>
+                <!--
                 <h1>// my projects</h1> 
 
                 <h2>Google Image Sizer Web Extension</h2>
@@ -78,6 +81,41 @@
                     <a href="https://danielbingham.co.uk">// see it live 💻</a>
                     <a href="https://github.com/danieljbingham/danieljbingham.github.io">// read the code 💾</a>
                 </div>
+                -->
+
+                <!-- Swiper -->
+                <div class="my-swiper-container">
+                <h1>// my projects</h1> 
+                
+                <div class="swiper-container mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <h2>Google Image Sizer Web Extension</h2>
+                            <p>The web extension recovers lost functionality in Google Image searches to enable searching for images by image size, with 7,000 active users across Chrome and Firefox.</p>
+                            
+                            <div class="buttons">
+                                <a href="https://chrome.google.com/webstore/detail/image-search-sizer/pkfdieeblkapoopkmlpnnlepnblgbphk?hl=en">// see it live 💻</a>
+                                <a href="https://github.com/danieljbingham/google-image-sizer">// read the code 💾</a>
+                            </div>        
+                        </div>
+                        <div class="swiper-slide">
+                            <h2>This Website!</h2>
+                            <p>I coded this website from scratch using HTML, CSS & JS.</p>
+                
+                            <div class="buttons">
+                                <a href="https://danielbingham.co.uk">// see it live 💻</a>
+                                <a href="https://github.com/danieljbingham/danieljbingham.github.io">// read the code 💾</a>
+                            </div>
+                        </div>
+                    </div>
+              
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+                </div>
+
             </div>
 
          </section>
@@ -100,5 +138,29 @@
     </div>
     
     <script src="script.js"></script>
+
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            centeredSlides: true,
+            loop: true,
+            slidesPerView: 'auto',
+            autoplay: {
+              delay: 5000,
+            },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          });
+        </script>
+    
 </body>
 </html>

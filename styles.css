@@ -141,7 +141,7 @@ p {
 }
 
 #projects p {
-    max-width: 700px;
+    max-width: 100%;
     margin-top: 15px;
 }
 
@@ -190,11 +190,11 @@ p:hover {
     transform: translateY(1rem);
     opacity: 0;
 
-    animation: fadeinUp 0.8s forwards 5s; 
-    -webkit-animation: fadeinUp 0.8s forwards 5s; 
-    -moz-animation: fadeinUp 0.8s forwards 5s;
-     -ms-animation: fadeinUp 0.8s forwards 5s;
-      -o-animation: fadeinUp 0.8s forwards 5s;
+    animation: fadeinUp 0.8s forwards 4.2s; 
+    -webkit-animation: fadeinUp 0.8s forwards 4.2s; 
+    -moz-animation: fadeinUp 0.8s forwards 4.2s;
+     -ms-animation: fadeinUp 0.8s forwards 4.2s;
+      -o-animation: fadeinUp 0.8s forwards 4.2s;
 
     display: flex;
     flex-direction: row;
@@ -289,6 +289,32 @@ p:hover {
     transform: translateY(80px);
 }
 
+/* swiperjs */
+.swiper-pagination-bullet {
+    opacity: 0.8;
+    background: #ffffff !important;
+}
+.swiper-pagination-bullet-active {
+  background: rgb(235, 56, 140) !important;
+}
+.my-swiper-container {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.swiper-container {
+  overflow: hidden;
+}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+  right: 0px !important;
+  left: auto !important;
+  color: #fff !important;
+}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+  left: 0px !important;
+  right: auto !important;
+  color: #fff !important;
+}
+
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     .buttons {
@@ -309,6 +335,16 @@ p:hover {
         text-align: center;
         margin: 15px auto 20px auto;
     }
+    .my-swiper-container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+        visibility: hidden !important;
+      }
+      .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+        visibility: hidden !important;
+      }
   }
 
 ::selection {
