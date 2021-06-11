@@ -304,6 +304,9 @@ p:hover {
 .swiper-container {
   overflow: hidden;
 }
+.swiper-slide {
+    padding: 0 2px;
+}
 .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
   right: 0px !important;
   left: auto !important;
@@ -313,6 +316,9 @@ p:hover {
   left: 0px !important;
   right: auto !important;
   color: #fff !important;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 0px !important;
 }
 
 @media only screen and (max-width: 768px) {
